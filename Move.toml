@@ -1,0 +1,11 @@
+[package]
+name = "my_first_package"
+edition = "legacy"
+license = "MIT"
+authors = ["ORYXCHAIN"]
+
+[addresses]
+my_first_package = "0xc9cecc8bc68150c0fd010a93bc38593293ec8fd0854fc36c20a5bd9619714e3c"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "<commit-hash>" }
